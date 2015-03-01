@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+        <link rel="import" href="bower_components/core-icon/core-icon.html" ></link>
+        <link rel="import" href="bower_components/core-icons/av-icons.html" />
+        <link rel="import" href="custom-icons.html" >
+        <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+    </head>
+
+    <body>
+
+        <core-icon id="fcid1"  class="fc" icon="custom-icons:fancy-circles"></core-icon>
+        <core-icon id="fcid2" class="fc" icon="custom-icons:fancy-circles"></core-icon>
+        <style>
+            .fc {
+                width: 200px;
+                height: 200px;
+            }
+            core-icon circle {
+                fill: #0b50bf;
+            }
+            core-icon circle:first-child {
+                fill: red;
+            }
+            core-icon circle:last-child {
+                fill: #0083ff;
+            }
+        </style>
+
+        <core-icon class="play" icon="av:play-arrow"></core-icon>
+        <style>
+            .play {
+                color: red;
+                width: 200px;
+                height: 200px;
+            }
+            .bplay {
+                color: green;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+
+        <core-icon-button class="bplay" icon="av:play-arrow">Play Music</core-icon-button>
+    </body>
+</html>
